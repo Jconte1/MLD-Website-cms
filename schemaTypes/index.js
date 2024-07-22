@@ -6,11 +6,7 @@ import siteSettings from './siteSettings'
 //DOCUMENTS (PAGES)
 import homepage from './documents/homepage';
 import allShowrooms from './documents/allShowrooms';
-import slcShowroom from './documents/slcShowroom';
-import provoShowroom from './documents/provoShowroom';
-import boiseShowroom from './documents/boiseShowroom';
-import jacksonShowroom from './documents/jacksonShowroom';
-import ketchumShowroom from './documents/ketchumShowroom';
+import showroom from './documents/showroom';
 
 //OBJECTS (COMPONENTS)
 import showroomVideo from './objects/ShowroomVideoComponent';
@@ -19,18 +15,14 @@ import cartoonComponent from './objects/cartoonComponent';
 import featuresComponent from './objects/featuresComponent';
 import gridGallery from './objects/gridGallery';
 import cards from './objects/cards';
-import showroomInfo from './objects/showroom';
+import showroomInfo from './objects/showroomInfo';
 
 export const schemaTypes = [
     //DOCUMENTS (PAGES)
     homepage,
     seo,
     allShowrooms,
-    slcShowroom,
-    provoShowroom,
-    boiseShowroom,
-    jacksonShowroom,
-    ketchumShowroom,
+    showroom,
     
     //OBJECTS (COMPONENTS)
     showroomVideo,

@@ -1,7 +1,7 @@
 import { defineField, defineType } from 'sanity';
 
 export default defineType({
-  name: 'showroom',
+  name: 'showroomInfo',
   type: 'object',
   title: 'Showroom',
   fields: [
