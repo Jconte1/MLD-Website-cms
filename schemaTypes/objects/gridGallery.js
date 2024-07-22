@@ -1,20 +1,33 @@
-import { defineField, defineType } from 'sanity';
-
-export default defineType({
+export default {
   name: 'gridGallery',
   type: 'object',
   title: 'Grid Gallery',
+  description: '*limited up to 20 photos',
   fields: [
-    defineField({ name: 'galleryTitle', type: 'string', title: 'Gallery Title' }),
-    defineField({ name: 'galleryDescription', type: 'text', title: 'Gallery Description' }),
-    defineField({ name: 'button1', type: 'string', title: 'Button 1 Text' }),
-    defineField({ name: 'button2', type: 'string', title: 'Button 2 Text' }),
-    defineField({ name: 'button3', type: 'string', title: 'Button 3 Text' }),
-    defineField({
-      name: 'images',
-      type: 'array',
-      of: [{ type: 'image' }],
-      title: 'Gallery Images'
-    })
+    { name: 'galleryTitle', type: 'string', title: 'Gallery Title' },
+    { name: 'galleryDescription', type: 'string', title: 'Gallery Description' },
+    { name: 'button1', type: 'string', title: 'Button 1 Text' },
+    { name: 'button2', type: 'string', title: 'Button 2 Text' },
+    { name: 'button3', type: 'string', title: 'Button 3 Text' },
+    { name: 'img1', type: 'image', title: 'Image 1' },
+    { name: 'img2', type: 'image', title: 'Image 2' },
+    { name: 'img3', type: 'image', title: 'Image 3' },
+    { name: 'img4', type: 'image', title: 'Image 4' },
+    { name: 'img5', type: 'image', title: 'Image 5' },
+    { name: 'img6', type: 'image', title: 'Image 6' },
+    { name: 'img7', type: 'image', title: 'Image 7' },
+    { name: 'img8', type: 'image', title: 'Image 8' },
+    { name: 'img9', type: 'image', title: 'Image 9' },
+    { name: 'img10', type: 'image', title: 'Image 10' },
+    { name: 'img11', type: 'image', title: 'Image 11' },
+    { name: 'img12', type: 'image', title: 'Image 12' },
+    { name: 'img13', type: 'image', title: 'Image 13' },
+    { name: 'img14', type: 'image', title: 'Image 14' },
+    { name: 'img15', type: 'image', title: 'Image 15' },
+    { name: 'img16', type: 'image', title: 'Image 16' },
+    { name: 'img17', type: 'image', title: 'Image 17' },
+    { name: 'img18', type: 'image', title: 'Image 18' },
+    { name: 'img19', type: 'image', title: 'Image 19' },
+    { name: 'img20', type: 'image', title: 'Image 20' },
   ]
-});
+};
