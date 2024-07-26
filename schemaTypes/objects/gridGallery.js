@@ -5,7 +5,7 @@ export default {
   description: '*limited up to 20 photos',
   fields: [
     { name: 'galleryTitle', type: 'string', title: 'Gallery Title' },
-    { name: 'galleryDescription', type: 'string', title: 'Gallery Description' },
+    { name: 'galleryDescription', type: 'text', title: 'Gallery Description' },
     { name: 'button1', type: 'string', title: 'Button 1 Text' },
     { name: 'button2', type: 'string', title: 'Button 2 Text' },
     { name: 'button3', type: 'string', title: 'Button 3 Text' },

@@ -1,15 +1,19 @@
-import { defineField, defineType } from 'sanity';
-
+// schemas/allShowrooms.js
 export default {
   name: 'allShowrooms',
   type: 'document',
   title: 'All Showrooms',
   fields: [
     {
-      name: 'showrooms',
-      type: 'array',
-      of: [{ type: 'showroom' }],
-      title: 'Showrooms'
+      name: 'mainTitle',
+      type: 'string',
+      title: 'Main Title'
     },
-  ],
+    {
+      name: 'pillars',
+      type: 'array',
+      title: 'Pillars',
+      of: [{ type: 'pillar' }]
+    }
+  ]
 };

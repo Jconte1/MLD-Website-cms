@@ -30,4 +30,23 @@ export const myStructure = (S) =>
                 ),
             ])
         ),
+      S.divider(),
+      S.listItem()
+        .title('Offerings')
+        .child(
+          S.list()
+            .title('Offerings')
+            .items([
+              S.documentTypeListItem('offering').title('Offerings'),
+              S.listItem()
+                .title('All Offerings Page')
+                .schemaType('offering')
+                .child(
+                  S.editor()
+                    .id('allOfferings')
+                    .schemaType('allOfferings')
+                    .documentId('allOfferings')
+                ),
+            ])
+        ),
     ]);
