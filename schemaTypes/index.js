@@ -26,9 +26,13 @@ import showroomSlider from './objects/showroomSlider';
 import showroomSliderItem from './objects/showroomSliderItem';
 import parallaxIntro from './objects/parallaxIntro';
 import pillars from './objects/pillars';
-
+import richText from './objects/richText';
+import normalText from './objects/normalText';
+import customImage from './objects/customImage';
+import customCode from './objects/customCode';
 
 export const schemaTypes = [
+    
     //DOCUMENTS (PAGES)
     homepage,
     seo,
@@ -53,4 +57,8 @@ export const schemaTypes = [
     showroomSlider,
     showroomSliderItem,
     pillars,
+    normalText,
+    richText,
+    customImage,
+    // customCode,
 ]
