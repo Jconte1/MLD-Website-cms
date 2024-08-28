@@ -15,11 +15,7 @@ export default {
       type: 'seo',
       title: 'SEO Settings'
     },
-    {
-      name: 'richText',
-      type: 'richText',
-      title: 'blog content'
-    },
+    
     {
       name: 'showroomVideo',
       type: 'showroomVideo',

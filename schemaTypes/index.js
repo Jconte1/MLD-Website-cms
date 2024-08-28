@@ -2,12 +2,19 @@ import seo from './seo';
 import pages from './pages';
 import siteSettings from './siteSettings'
 
+// ARRAY IMPORTS 
+import blockContent from './arrays/blockContent';
 
 //DOCUMENTS IMPORTS (PAGES)
 import homepage from './documents/homepage';
 import allShowrooms from './documents/allShowrooms';
 import showroom from './documents/showroom';
 import offering from './documents/offering';
+import blogPost from './documents/post';
+import author from './documents/author';
+import category from './documents/category';
+import blogPageConfig from './documents/blogPageConfig';
+
 
 //OBJECTS IMPORTS (COMPONENTS)
 import showroomVideo from './objects/ShowroomVideoComponent';
@@ -26,12 +33,20 @@ import showroomSlider from './objects/showroomSlider';
 import showroomSliderItem from './objects/showroomSliderItem';
 import parallaxIntro from './objects/parallaxIntro';
 import pillars from './objects/pillars';
-import richText from './objects/richText';
-import normalText from './objects/normalText';
-import customImage from './objects/customImage';
-import customCode from './objects/customCode';
+import simpleintro2 from './objects/simpleintro2';
+import textWrap from './objects/textWrap';
+import textWrapReverse from './objects/textWrapReverse';
+import blogWithGallery from './objects/blogWithGallery';
+
+// import richText from './objects/richText';
+// import normalText from './objects/normalText';
+// import customImage from './objects/customImage';
+// import customCode from './objects/customCode';
 
 export const schemaTypes = [
+
+    // ARRAYS
+    blockContent,
     
     //DOCUMENTS (PAGES)
     homepage,
@@ -39,6 +54,11 @@ export const schemaTypes = [
     allShowrooms,
     showroom,
     offering,
+    blogPost,
+    author,
+    category,
+    blogPageConfig,
+    
 
     //OBJECTS (COMPONENTS)
     showroomVideo,
@@ -57,8 +77,12 @@ export const schemaTypes = [
     showroomSlider,
     showroomSliderItem,
     pillars,
-    normalText,
-    richText,
-    customImage,
+    simpleintro2,
+    textWrap,
+    textWrapReverse,
+    blogWithGallery,
+    // normalText,
+    // richText,
+    // customImage,
     // customCode,
 ]

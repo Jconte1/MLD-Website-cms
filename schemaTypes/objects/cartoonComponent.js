@@ -1,5 +1,4 @@
-
-
+import { customBlock } from "../../component/customBlock";
 
 export default{
     name: 'cartoonComponent',
@@ -7,7 +6,7 @@ export default{
     title: 'Cartoon Component',
     fields: [
       { name: 'cartoonTitle', type: 'string', title: 'Cartoon Title' },
-      { name: 'cartoonDescription', type: 'text', title: 'Cartoon Description' },
+      { name: 'cartoonDescription', type: 'array', title: 'Cartoon Description', of: [customBlock] },
       { name: 'pic1', type: 'image', title: 'Picture 1' },
       { name: 'picTitle1', type: 'string', title: 'Picture 1 Title' },
       { name: 'pic2', type: 'image', title: 'Picture 2' },

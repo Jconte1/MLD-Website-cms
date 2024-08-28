@@ -1,3 +1,5 @@
+import { MdEvent, MdArticle } from 'react-icons/md';
+
 export const myStructure = (S) =>
   S.list()
     .title('Content')
@@ -18,7 +20,7 @@ export const myStructure = (S) =>
           S.list()
             .title('Showrooms')
             .items([
-              S.documentTypeListItem('showroom').title('Showrooms'), 
+              S.documentTypeListItem('showroom').title('Showrooms'),
               S.listItem()
                 .title('All Showrooms Page')
                 .schemaType('allShowrooms')
@@ -47,6 +49,23 @@ export const myStructure = (S) =>
                     .schemaType('allOfferings')
                     .documentId('allOfferings')
                 ),
+            ])
+        ),
+      S.divider(),
+      S.listItem()
+        .title('Events & News')
+        .icon(MdEvent)
+        .id('eventsNews')  
+        .child(
+          S.list()
+            .title('Blog')
+            .id('blogList')  
+            .items([
+              S.documentTypeListItem('post')
+                .title('Blogs')
+                .icon(MdArticle)
+                .id('blogDocuments'),  
+             
             ])
         ),
     ]);
