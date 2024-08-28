@@ -10,7 +10,7 @@ import homepage from './documents/homepage';
 import allShowrooms from './documents/allShowrooms';
 import showroom from './documents/showroom';
 import offering from './documents/offering';
-import blogPost from './documents/post';
+import blogPost from './documents/blogPost';
 import author from './documents/author';
 import category from './documents/category';
 import blogPageConfig from './documents/blogPageConfig';
