@@ -61,7 +61,7 @@ export const myStructure = (S) =>
             .title('Blog')
             .id('blogList')  
             .items([
-              S.documentTypeListItem('BlogPost')
+              S.documentTypeListItem('blogPost')
                 .title('Blogs')
                 .icon(MdArticle)
                 .id('blogDocuments'),  
