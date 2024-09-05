@@ -1,6 +1,6 @@
 import seo from './seo';
 import pages from './pages';
-import siteSettings from './siteSettings'
+import siteSettings from './siteSettings';
 
 // ARRAY IMPORTS 
 import blockContent from './arrays/blockContent';
@@ -14,7 +14,6 @@ import blogPost from './documents/blogPost';
 import author from './documents/author';
 import category from './documents/category';
 import blogPageConfig from './documents/blogPageConfig';
-
 
 //OBJECTS IMPORTS (COMPONENTS)
 import showroomVideo from './objects/ShowroomVideoComponent';
@@ -33,10 +32,12 @@ import showroomSlider from './objects/showroomSlider';
 import showroomSliderItem from './objects/showroomSliderItem';
 import parallaxIntro from './objects/parallaxIntro';
 import pillars from './objects/pillars';
+import simpleIntro from './objects/simpleIntro'; 
 import simpleintro2 from './objects/simpleintro2';
 import textWrap from './objects/textWrap';
 import textWrapReverse from './objects/textWrapReverse';
 import blogWithGallery from './objects/blogWithGallery';
+import blogImage from './objects/blogImage';
 
 // import richText from './objects/richText';
 // import normalText from './objects/normalText';
@@ -77,10 +78,12 @@ export const schemaTypes = [
     showroomSlider,
     showroomSliderItem,
     pillars,
+    simpleIntro, // Corrected casing
     simpleintro2,
     textWrap,
     textWrapReverse,
     blogWithGallery,
+    blogImage,
     // normalText,
     // richText,
     // customImage,

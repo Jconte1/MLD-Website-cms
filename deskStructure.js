@@ -62,10 +62,18 @@ export const myStructure = (S) =>
             .id('blogList')  
             .items([
               S.documentTypeListItem('blogPost')
-                .title('Blogs')
+                .title('Blog Post')
                 .icon(MdArticle)
-                .id('blogDocuments'),  
-             
+                .id('blogDocuments'),
+              S.listItem()
+                .title('Blog List Page') 
+                .schemaType('blogPageConfig')
+                .child(
+                  S.editor()
+                    .id('blogPageConfig')
+                    .schemaType('blogPageConfig')
+                    .documentId('blogPageConfig')
+                ),
             ])
         ),
     ]);
