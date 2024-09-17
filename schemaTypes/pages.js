@@ -45,7 +45,6 @@ export default defineType({
       type: 'array',
       of: [
         { type: 'showroomVideoComponent' },
-        // Add other component types here
       ],
     }),
   ],

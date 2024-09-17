@@ -14,6 +14,9 @@ import blogPost from './documents/blogPost';
 import author from './documents/author';
 import category from './documents/category';
 import blogPageConfig from './documents/blogPageConfig';
+import allRecipes from './documents/allRecipes';
+
+
 
 //OBJECTS IMPORTS (COMPONENTS)
 import showroomVideo from './objects/ShowroomVideoComponent';
@@ -38,7 +41,12 @@ import textWrap from './objects/textWrap';
 import textWrapReverse from './objects/textWrapReverse';
 import blogWithGallery from './objects/blogWithGallery';
 import blogImage from './objects/blogImage';
-
+import filterComponent from './objects/filterComponent';
+import recipeDetails from './objects/recipeDetails';
+import recipe from './documents/recipe';
+import ingredients from './objects/ingredients';
+import instructions from './objects/instructions';
+import blogTitle from './objects/blogTitle';
 // import richText from './objects/richText';
 // import normalText from './objects/normalText';
 // import customImage from './objects/customImage';
@@ -59,7 +67,8 @@ export const schemaTypes = [
     author,
     category,
     blogPageConfig,
-    
+    recipe,
+    allRecipes,
 
     //OBJECTS (COMPONENTS)
     showroomVideo,
@@ -84,6 +93,11 @@ export const schemaTypes = [
     textWrapReverse,
     blogWithGallery,
     blogImage,
+    filterComponent,
+    recipeDetails,
+    ingredients,
+    instructions,
+    blogTitle,
     // normalText,
     // richText,
     // customImage,

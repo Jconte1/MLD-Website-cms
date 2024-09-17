@@ -55,24 +55,36 @@ export const myStructure = (S) =>
       S.listItem()
         .title('Events & News')
         .icon(MdEvent)
-        .id('eventsNews')  
+        .id('eventsNews')
         .child(
           S.list()
             .title('Blog')
-            .id('blogList')  
+            .id('blogList')
             .items([
               S.documentTypeListItem('blogPost')
                 .title('Blog Post')
                 .icon(MdArticle)
                 .id('blogDocuments'),
               S.listItem()
-                .title('Blog List Page') 
+                .title('All Blogs Page')
                 .schemaType('blogPageConfig')
                 .child(
                   S.editor()
                     .id('blogPageConfig')
                     .schemaType('blogPageConfig')
                     .documentId('blogPageConfig')
+                ),
+              S.documentTypeListItem('recipe')
+                .title('Recipes')
+                .icon(MdArticle),
+              S.listItem()
+                .title('All Recipes Page')  // Add All Recipes Page here
+                .schemaType('allRecipes')   // Schema type for all recipes page
+                .child(
+                  S.editor()
+                    .id('allRecipes')
+                    .schemaType('allRecipes')  // Connects to your allRecipes schema
+                    .documentId('allRecipes')  // Unique document ID for allRecipes page
                 ),
             ])
         ),
