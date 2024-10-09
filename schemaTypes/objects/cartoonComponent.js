@@ -5,8 +5,8 @@ export default{
     type: 'object',
     title: 'Cartoon Component',
     fields: [
-      { name: 'cartoonTitle', type: 'string', title: 'Cartoon Title' },
-      { name: 'cartoonDescription', type: 'array', title: 'Cartoon Description', of: [customBlock] },
+      { name: 'cartoonTitle', type: 'string', title: 'Title' },
+      { name: 'cartoonDescription', type: 'array', title: 'Description', of: [customBlock] },
       { name: 'pic1', type: 'image', title: 'Picture 1' },
       { name: 'picTitle1', type: 'string', title: 'Picture 1 Title' },
       { name: 'pic2', type: 'image', title: 'Picture 2' },

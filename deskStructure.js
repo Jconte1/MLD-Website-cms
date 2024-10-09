@@ -1,4 +1,4 @@
-import { MdEvent, MdArticle } from 'react-icons/md';
+import { MdEvent, MdArticle, MdPeople } from 'react-icons/md'; // Add an icon for Teams page
 
 export const myStructure = (S) =>
   S.list()
@@ -42,7 +42,7 @@ export const myStructure = (S) =>
               S.documentTypeListItem('offering').title('Offerings'),
               S.listItem()
                 .title('All Offerings Page')
-                .schemaType('offering')
+                .schemaType('allOfferings')
                 .child(
                   S.editor()
                     .id('allOfferings')
@@ -74,18 +74,112 @@ export const myStructure = (S) =>
                     .schemaType('blogPageConfig')
                     .documentId('blogPageConfig')
                 ),
+              S.divider(),
               S.documentTypeListItem('recipe')
                 .title('Recipes')
                 .icon(MdArticle),
               S.listItem()
-                .title('All Recipes Page')  // Add All Recipes Page here
-                .schemaType('allRecipes')   // Schema type for all recipes page
+                .title('All Recipes Page')
+                .schemaType('allRecipes')
                 .child(
                   S.editor()
                     .id('allRecipes')
-                    .schemaType('allRecipes')  // Connects to your allRecipes schema
-                    .documentId('allRecipes')  // Unique document ID for allRecipes page
+                    .schemaType('allRecipes')
+                    .documentId('allRecipes')
                 ),
+              S.divider(),
+              S.listItem()
+                .title('Chefs Corner')
+                .schemaType('chefscorner')
+                .child(
+                  S.editor()
+                    .id('chefscorner')
+                    .schemaType('chefscorner')
+                    .documentId('chefscorner')
+                ),
+              S.divider(),
+              S.listItem()
+                .title('Demo Calendar')
+                .schemaType('event')
+                .child(
+                  S.documentTypeList('event')
+                    .title('Events')
+                )
             ])
         ),
+      S.divider(),
+      // Add the Teams Page list item
+      S.listItem()
+        .title('We Are MLD')
+        .icon(MdPeople)
+        .child(
+          S.list()
+            .title('We Are MLD')
+            .items([
+              S.listItem()
+                .title('Our Team')
+                .child(
+                  S.list()
+                    .title('Our Team')
+                    .items([
+                      S.listItem()
+                        .title('Intro Section (SplitGallery)')
+                        .child(
+                          S.editor()
+                            .schemaType('splitGallery')
+                            .documentId('splitGallery')
+                        ),
+                      S.divider(),
+                      S.listItem()
+                        .title('Executives')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Executives Department')
+                            .filter('_type == "department" && team == "executive"')
+                        ),
+                      S.listItem()
+                        .title('Salt Lake Team')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Salt Lake Team Departments')
+                            .filter('_type == "department" && team == "salt-lake"')
+                        ),
+                      S.listItem()
+                        .title('Provo Team')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Provo Team Departments')
+                            .filter('_type == "department" && team == "provo"')
+                        ),
+                      S.listItem()
+                        .title('Boise Team')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Boise Team Departments')
+                            .filter('_type == "department" && team == "boise"')
+                        ),
+                      S.listItem()
+                        .title('Sun Valley Team')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Sun Valley Team Departments')
+                            .filter('_type == "department" && team == "sun-valley"')
+                        ),
+                      S.listItem()
+                        .title('Jackson Team')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Jackson Team Departments')
+                            .filter('_type == "department" && team == "jackson"')
+                        ),
+                    ])
+                ),
+                S.listItem()
+                .title('Our Story')
+                .child(
+                  S.documentTypeList('timelineEvent') // Refers to your timeline event schema
+                    .title('Timeline Events') // Title shown in the studio for events
+                ),
+            ])
+        )
     ]);

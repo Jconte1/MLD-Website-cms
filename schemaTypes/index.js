@@ -8,6 +8,7 @@ import blockContent from './arrays/blockContent';
 //DOCUMENTS IMPORTS (PAGES)
 import homepage from './documents/homepage';
 import allShowrooms from './documents/allShowrooms';
+import allOfferings from './documents/allOfferings';
 import showroom from './documents/showroom';
 import offering from './documents/offering';
 import blogPost from './documents/blogPost';
@@ -15,8 +16,12 @@ import author from './documents/author';
 import category from './documents/category';
 import blogPageConfig from './documents/blogPageConfig';
 import allRecipes from './documents/allRecipes';
-
-
+import chefscorner from './documents/chefscorner';
+import events from './documents/events';
+import team from './documents/team';
+import department from './documents/department';
+import employee from './documents/employee';
+import timeline from './documents/timeline';
 
 //OBJECTS IMPORTS (COMPONENTS)
 import showroomVideo from './objects/ShowroomVideoComponent';
@@ -47,10 +52,8 @@ import recipe from './documents/recipe';
 import ingredients from './objects/ingredients';
 import instructions from './objects/instructions';
 import blogTitle from './objects/blogTitle';
-// import richText from './objects/richText';
-// import normalText from './objects/normalText';
-// import customImage from './objects/customImage';
-// import customCode from './objects/customCode';
+import splitGallery from './objects/splitGallery';
+
 
 export const schemaTypes = [
 
@@ -61,6 +64,7 @@ export const schemaTypes = [
     homepage,
     seo,
     allShowrooms,
+    allOfferings,
     showroom,
     offering,
     blogPost,
@@ -69,6 +73,12 @@ export const schemaTypes = [
     blogPageConfig,
     recipe,
     allRecipes,
+    chefscorner,
+    events,
+    team,
+    department,
+    employee,
+    timeline,
 
     //OBJECTS (COMPONENTS)
     showroomVideo,
@@ -87,7 +97,7 @@ export const schemaTypes = [
     showroomSlider,
     showroomSliderItem,
     pillars,
-    simpleIntro, // Corrected casing
+    simpleIntro, 
     simpleintro2,
     textWrap,
     textWrapReverse,
@@ -98,8 +108,6 @@ export const schemaTypes = [
     ingredients,
     instructions,
     blogTitle,
-    // normalText,
-    // richText,
-    // customImage,
-    // customCode,
+    splitGallery,
+    
 ]
