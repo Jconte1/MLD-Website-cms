@@ -22,6 +22,8 @@ import team from './documents/team';
 import department from './documents/department';
 import employee from './documents/employee';
 import timeline from './documents/timeline';
+import mldcares from './documents/mldcares';
+import career from './documents/career';
 
 //OBJECTS IMPORTS (COMPONENTS)
 import showroomVideo from './objects/ShowroomVideoComponent';
@@ -79,6 +81,8 @@ export const schemaTypes = [
     department,
     employee,
     timeline,
+    mldcares,
+    career,
 
     //OBJECTS (COMPONENTS)
     showroomVideo,

@@ -6,9 +6,9 @@ export default {
       {
         name: 'date',
         title: 'Event Date',
-        type: 'date', // You can also use 'string' if you don't want a strict date format.
+        type: 'date', 
         options: {
-          dateFormat: 'YYYY', // Year format, you can customize this if needed.
+          dateFormat: 'YYYY', 
         }
       },
       {
@@ -29,23 +29,23 @@ export default {
       {
         name: 'quoteText',
         title: 'Quote Text',
-        type: 'text', // Or 'string' if you want to limit it to shorter quotes.
+        type: 'text', 
       },
       {
         name: 'icon',
         title: 'Icon',
-        type: 'image', // You could also store this as a file upload, depending on how you plan to use the SVGs.
+        type: 'image', 
         options: {
-          hotspot: true, // Enable image cropping for better control
+          hotspot: true, 
         },
       },
       {
         name: 'sliderImages',
         title: 'Slider Images',
         type: 'array',
-        of: [{type: 'image'}], // Array of images
+        of: [{type: 'image'}], 
         options: {
-          layout: 'grid' // Display images in grid format in the Sanity Studio
+          layout: 'grid' 
         }
       }
     ]

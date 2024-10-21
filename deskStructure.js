@@ -174,12 +174,33 @@ export const myStructure = (S) =>
                         ),
                     ])
                 ),
-                S.listItem()
+              S.listItem()
                 .title('Our Story')
                 .child(
-                  S.documentTypeList('timelineEvent') // Refers to your timeline event schema
-                    .title('Timeline Events') // Title shown in the studio for events
+                  S.documentTypeList('timelineEvent')
+                    .title('Timeline Events')
                 ),
+              S.listItem()
+                .title('MLD Cares')
+                .child(
+                  S.documentTypeList('mldcares')
+                    .title('MLD Cares page')
+                ),
+              S.listItem()
+                .title('Careers')
+                // You can change the icon as per your preference
+                .child(
+                  S.list()
+                    .title('Careers')
+                    .items([
+
+                      S.listItem()
+                        .title('Careers')
+                        
+                        .schemaType('career')
+                        .child(S.documentTypeList('career').title('Job Postings'))
+                    ])
+                )
             ])
         )
     ]);
