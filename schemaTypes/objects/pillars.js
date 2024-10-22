@@ -9,6 +9,7 @@ export default {
     { name: 'locationCity', type: 'string', title: 'City', description: '*no commas needed*' },
     { name: 'locationState', type: 'string', title: 'State', description: '*no commas needed*' },
     { name: 'locationZipcode', type: 'string', title: 'Zip Code', description: '*no commas needed*' },
+    { name: 'locationHoursTitle', type: 'string', title: 'Showroom Hours Title', description: "Title before describing days open and hours per location. ie:'showroom hours'"},
     { name: 'locationDays', type: 'string', title: 'Days' },
     { name: 'locationHours', type: 'string', title: 'Hours' },
     { name: 'locationSaturday', type: 'string', title: 'Saturday' },

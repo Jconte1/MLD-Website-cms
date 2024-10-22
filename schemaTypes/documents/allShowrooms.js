@@ -10,6 +10,11 @@ export default {
       title: 'Main Title'
     },
     {
+      name: 'subTitle',
+      type: 'string',
+      title: 'Main Sub Title'
+    },
+    {
       name: 'pillars',
       type: 'array',
       title: 'Pillars',
