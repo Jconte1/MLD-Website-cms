@@ -9,6 +9,23 @@ export default {
         title: 'Department Name',
       },
       {
+        name: 'buttonTitle',
+        type: 'string',
+        title: 'Button Intro',
+        description: 'ie "Have a question?"',
+      },
+      {
+        name: 'email',
+        type: 'string',
+        title: 'Email Address Link',
+      },
+      {
+        name: 'buttonText',
+        type: 'string',
+        title: 'Button Text',
+        description: 'ie: "Email Us"',
+      },
+      {
         name: 'order',
         type: 'number',
         title: 'Order',
@@ -21,6 +38,7 @@ export default {
         options: {
           list: [
             { title: 'Executives', value: 'executive' },
+            { title: 'Admins', value: 'admin' },
             { title: 'Salt Lake', value: 'salt-lake' },
             { title: 'Provo', value: 'provo' },
             { title: 'Boise', value: 'boise' },

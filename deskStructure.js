@@ -137,6 +137,13 @@ export const myStructure = (S) =>
                             .title('Executives Department')
                             .filter('_type == "department" && team == "executive"')
                         ),
+                        S.listItem()
+                        .title('Admin')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Admin Department')
+                            .filter('_type == "department" && team == "admin"')
+                        ),
                       S.listItem()
                         .title('Salt Lake Team')
                         .child(
