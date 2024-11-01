@@ -6,12 +6,12 @@ export const myStructure = (S) =>
     .items([
       S.listItem()
         .title('Homepage')
-        .schemaType('homepage')
+        .schemaType('homePage')
         .child(
           S.editor()
-            .id('homepage')
-            .schemaType('homepage')
-            .documentId('homepage')
+            .id('homePage')
+            .schemaType('homePage')
+            .documentId('homePage')
         ),
       S.divider(),
       S.listItem()

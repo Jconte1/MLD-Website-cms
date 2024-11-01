@@ -83,6 +83,7 @@ export const schemaTypes = [
     timeline,
     mldcares,
     career,
+    
 
     //OBJECTS (COMPONENTS)
     showroomVideo,

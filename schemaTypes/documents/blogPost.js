@@ -283,18 +283,6 @@ export default {
               type: 'string',
             }
           ],
-          // preview: {
-          //   select: {
-          //     blogTitle: 'blogTitle'
-          //   },
-          //   prepare(selection) {
-          //     const { blogTitle } = selection;
-          //     return {
-          //       title: 'Sub Title',
-          //       media: blogTitle,
-          //     }
-          //   }
-          // }
         },
         {
           name: 'blogParagraph',
