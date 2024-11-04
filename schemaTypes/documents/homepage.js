@@ -130,7 +130,7 @@ export default {
             }
           ]
         },
-        
+
         {
           name: 'bigTitle',
           title: 'Title, Sub-Title, and Link',
@@ -150,6 +150,52 @@ export default {
               name: 'subTitle',
               title: 'Sub Title',
               type: 'string',
+            },
+          ],
+        },
+        {
+          name: 'coolTiles',
+          type: 'object',
+          title: 'Cool Tiles',
+          fields: [
+            {
+              name: 'title',
+              type: 'string',
+              title: 'Title',
+              description: 'Main title for the component',
+            },
+            {
+              name: 'subTitle',
+              type: 'string',
+              title: 'Subtitle',
+              description: 'Subtitle for the component',
+            },
+            {
+              name: 'cards',
+              type: 'array',
+              title: 'Cards',
+              description: 'Array of cards to be displayed',
+              of: [
+                {
+                  type: 'object',
+                  title: 'Card',
+                  fields: [
+                    {
+                      name: 'id',
+                      type: 'string',
+                      title: 'ID',
+                      description: 'Unique identifier for the card',
+                    },
+                    { name: 'imageURL', title: 'Image URL', type: 'image', options: { hotspot: true } },
+                    {
+                      name: 'name',
+                      type: 'string',
+                      title: 'Name',
+                      description: 'Name of the card item',
+                    },
+                  ],
+                },
+              ],
             },
           ],
         },
