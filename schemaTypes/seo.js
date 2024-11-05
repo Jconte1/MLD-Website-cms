@@ -17,12 +17,12 @@ export default {
       description: 'Provide a brief description (150-160 characters) of the page content.',
       validation: Rule => Rule.max(160).warning('Long descriptions may be truncated by search engines.')
     },
-    // {
-    //   name: 'canonicalUrl',
-    //   title: 'Canonical URL',
-    //   type: 'url',
-    //   description: 'Enter the main URL for this page to avoid duplicate content issues.'
-    // },
+    {
+      name: 'canonicalUrl',
+      title: 'Canonical URL',
+      type: 'url',
+      description: 'Enter the main URL for this page to avoid duplicate content issues.'
+    },
     {
       name: 'ogImage',
       title: 'Open Graph Image',
