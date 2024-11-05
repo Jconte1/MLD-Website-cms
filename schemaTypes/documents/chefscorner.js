@@ -4,6 +4,11 @@ export default {
     type: 'document',
     fields: [
         {
+            name: 'seo',
+            type: 'seo',
+            title: 'SEO Settings'
+        },
+        {
             name: 'simpleIntro',
             title: 'Simple Intro',
             type: 'object',
@@ -19,7 +24,7 @@ export default {
                     title: 'Background Image',
                     type: 'image',
                 },
-                
+
             ]
         },
         {

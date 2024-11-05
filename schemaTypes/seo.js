@@ -1,49 +1,70 @@
-import { defineField, defineType } from 'sanity';
-
-export default defineType({
+export default {
   name: 'seo',
   title: 'SEO',
-  type: 'document',
+  type: 'object',
   fields: [
-    defineField({
-      name: 'pageTitle',
-      title: 'Page Title',
+    {
+      name: 'title',
+      title: 'Title',
       type: 'string',
-      description: 'The title of the page, which will appear in the browser tab and search engine results.',
-    }),
-    defineField({
+      description: 'Enter a unique title for the page, ideally including relevant keywords.',
+      validation: Rule => Rule.max(60).warning('Long titles may be truncated by search engines.')
+    },
+    {
       name: 'description',
-      title: 'Meta Description',
+      title: 'Description',
       type: 'text',
-      description: 'A brief description of the page content, which will appear in search engine results.',
-      validation: Rule => Rule.max(160).warning('Meta descriptions are usually better when under 160 characters.'),
-    }),
-    defineField({
-      name: 'keywords',
-      title: 'Keywords',
-      type: 'array',
-      of: [{ type: 'string' }],
-      options: {
-        layout: 'tags',
-      },
-      description: 'A set of keywords relevant to the page content for SEO purposes.',
-    }),
-    defineField({
-      name: 'openGraphImage',
+      description: 'Provide a brief description (150-160 characters) of the page content.',
+      validation: Rule => Rule.max(160).warning('Long descriptions may be truncated by search engines.')
+    },
+    {
+      name: 'canonicalUrl',
+      title: 'Canonical URL',
+      type: 'url',
+      description: 'Enter the main URL for this page to avoid duplicate content issues.'
+    },
+    {
+      name: 'ogImage',
       title: 'Open Graph Image',
       type: 'image',
-      description: 'The image that will be displayed when the page is shared on social media platforms.',
+      description: 'Upload an image for social sharing (1200x630 px recommended).',
       options: {
-        hotspot: true,
+        hotspot: true
+      }
+    },
+    {
+      name: 'ogTitle',
+      title: 'Open Graph Title',
+      type: 'string',
+      description: 'Enter a custom title for social sharing (optional). Defaults to the main title if left blank.',
+    },
+    {
+      name: 'ogDescription',
+      title: 'Open Graph Description',
+      type: 'text',
+      description: 'Provide a brief description for social sharing (optional). Defaults to the main description if left blank.',
+      validation: Rule => Rule.max(160).warning('Long descriptions may be truncated by social platforms.')
+    },
+    {
+      name: 'ogType',
+      title: 'Open Graph Type',
+      type: 'string',
+      description: 'Select the type of content for social sharing. Typically "website" or "article".',
+      options: {
+        list: [
+          { title: 'Website', value: 'website' },
+          { title: 'Article', value: 'article' },
+          { title: 'Product', value: 'product' }
+        ]
       },
-      fields: [
-        defineField({
-          name: 'alt',
-          title: 'Alt Text',
-          type: 'string',
-          description: 'Alternative text for the image, used for accessibility and SEO.',
-        }),
-      ],
-    }),
-  ],
-});
+      initialValue: 'website'
+    },
+    {
+      name: 'locale',
+      title: 'Locale',
+      type: 'string',
+      description: 'Specify the language code (e.g., en_US for US English).',
+      initialValue: 'en_US'
+    }
+  ]
+};

@@ -4,6 +4,11 @@ export default {
     title: 'Department',
     fields: [
       {
+        name: 'seo',
+        type: 'seo',
+        title: 'SEO Settings'
+      },
+      {
         name: 'departmentName',
         type: 'string',
         title: 'Department Name',

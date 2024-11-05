@@ -5,6 +5,11 @@ export default {
   title: 'All Showrooms',
   fields: [
     {
+      name: 'seo',
+      type: 'seo',
+      title: 'SEO Settings'
+    },
+    {
       name: 'mainTitle',
       type: 'string',
       title: 'Main Title'
