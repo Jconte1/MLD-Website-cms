@@ -63,7 +63,7 @@ export default {
       name: 'locale',
       title: 'Locale',
       type: 'string',
-      description: 'Specify the language code (e.g., en_US for US English).',
+      description: 'Default is en_US. Specify the language code (e.g., en_US for US English).',
       initialValue: 'en_US'
     }
   ]
