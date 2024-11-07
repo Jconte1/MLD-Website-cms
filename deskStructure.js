@@ -137,7 +137,7 @@ export const myStructure = (S) =>
                             .title('Executives Department')
                             .filter('_type == "department" && team == "executive"')
                         ),
-                        S.listItem()
+                      S.listItem()
                         .title('Admin')
                         .child(
                           S.documentTypeList('department')
@@ -203,11 +203,21 @@ export const myStructure = (S) =>
 
                       S.listItem()
                         .title('Careers')
-                        
+
                         .schemaType('career')
                         .child(S.documentTypeList('career').title('Job Postings'))
                     ])
                 )
             ])
-        )
+        ),
+      S.divider(),
+      S.listItem()
+        .title('Shop Closeout Page')
+        .child(
+          S.editor()
+          .title('Shop Closeout Page')
+            .schemaType('closeout')
+            .documentId('closeout')
+        ),
+
     ]);

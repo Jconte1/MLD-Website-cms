@@ -24,7 +24,7 @@ import employee from './documents/employee';
 import timeline from './documents/timeline';
 import mldcares from './documents/mldcares';
 import career from './documents/career';
-
+import closeout from './documents/closeout';
 //OBJECTS IMPORTS (COMPONENTS)
 import showroomVideo from './objects/ShowroomVideoComponent';
 import hoursComponent from './objects/hoursComponent';
@@ -55,7 +55,7 @@ import ingredients from './objects/ingredients';
 import instructions from './objects/instructions';
 import blogTitle from './objects/blogTitle';
 import splitGallery from './objects/splitGallery';
-
+import bigTiles from './objects/bigTiles';
 
 export const schemaTypes = [
 
@@ -83,7 +83,7 @@ export const schemaTypes = [
     timeline,
     mldcares,
     career,
-    
+    closeout,
 
     //OBJECTS (COMPONENTS)
     showroomVideo,
@@ -114,5 +114,6 @@ export const schemaTypes = [
     instructions,
     blogTitle,
     splitGallery,
+    bigTiles,
     
 ]

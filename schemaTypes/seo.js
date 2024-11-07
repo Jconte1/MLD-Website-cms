@@ -7,7 +7,7 @@ export default {
       name: 'title',
       title: 'Title',
       type: 'string',
-      description: 'Enter a unique title for the page, ideally including relevant keywords.',
+      description: 'Enter a unique title for the page(60 characters), ideally including relevant keywords.',
       validation: Rule => Rule.max(60).warning('Long titles may be truncated by search engines.')
     },
     {
