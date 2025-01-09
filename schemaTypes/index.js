@@ -56,6 +56,8 @@ import instructions from './objects/instructions';
 import blogTitle from './objects/blogTitle';
 import splitGallery from './objects/splitGallery';
 import bigTiles from './objects/bigTiles';
+import video from './objects/video';
+import review from './objects/review';
 
 export const schemaTypes = [
 
@@ -115,5 +117,6 @@ export const schemaTypes = [
     blogTitle,
     splitGallery,
     bigTiles,
-    
+    video,
+    review,
 ]

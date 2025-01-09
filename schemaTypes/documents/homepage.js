@@ -19,6 +19,31 @@ export default {
       title: 'Page Sections',
       type: 'array',
       of: [
+       
+        {
+          name: 'video',
+          type: 'video',
+          title: 'Intro Video Section'
+        },
+        {
+          name: 'review',
+          type: 'review',
+          title: 'Reviews'
+        },
+        {
+          name: '3dslider',
+          title: '3D Slider',
+          type: 'object', // Use 'object' since it includes fields
+          fields: [
+            { 
+              name: 'title', 
+              title: 'Title', 
+              type: 'string', 
+              description: 'The main title of the 3D slider.',
+              validation: Rule => Rule.required(), // Make the title required
+            },
+          ],
+        },
         {
           name: 'showroomSlider',
           title: 'Showroom Slider',
@@ -241,7 +266,25 @@ export default {
               description: 'Text displayed on the button, e.g., "Read More"'
             }
           ]
-        }
+        },
+        {
+          name: 'leadForm',
+          title: 'Lead Form',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              type: 'string',
+              title: 'Form Title',
+              
+            },
+            {
+              name: 'subTitle',
+              type: 'string',
+              title: 'Form Subtitle',
+            },
+          ],
+        },
       ]
     }
   ]

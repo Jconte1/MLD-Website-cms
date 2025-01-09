@@ -63,6 +63,7 @@ export default {
                                 {
                                     type: 'object',
                                     fields: [
+                                        { name: 'sliderTitle', title: 'Slide Title', type: 'text' },
                                         { name: 'description', title: 'Description', type: 'text' },
                                         { name: 'buttonText', title: 'Button Text', type: 'string' },
                                         { name: 'image', title: 'Image', type: 'image' },
@@ -82,6 +83,24 @@ export default {
                             };
                         },
                     },
+                },
+                {
+                    name: 'leadForm',
+                    title: 'Lead Form',
+                    type: 'object',
+                    fields: [
+                        {
+                            name: 'title',
+                            type: 'string',
+                            title: 'Form Title',
+
+                        },
+                        {
+                            name: 'subTitle',
+                            type: 'string',
+                            title: 'Form Subtitle',
+                        },
+                    ],
                 },
                 {
                     name: 'showroomSlider',

@@ -24,6 +24,24 @@ export default {
       type: 'array',
       title: 'Pillars',
       of: [{ type: 'pillar' }]
-    }
+    },
+    {
+      name: 'leadForm',
+      title: 'Lead Form',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          type: 'string',
+          title: 'Form Title',
+          
+        },
+        {
+          name: 'subTitle',
+          type: 'string',
+          title: 'Form Subtitle',
+        },
+      ],
+    },
   ]
 };

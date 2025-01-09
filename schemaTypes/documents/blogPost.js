@@ -303,6 +303,24 @@ export default {
           ],
         },
         {
+          name: 'leadForm',
+          title: 'Lead Form',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              type: 'string',
+              title: 'Form Title',
+              
+            },
+            {
+              name: 'subTitle',
+              type: 'string',
+              title: 'Form Subtitle',
+            },
+          ],
+        },
+        {
           name: 'cards',
           title: 'Cards Section',
           type: 'object',
