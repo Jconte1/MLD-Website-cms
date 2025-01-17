@@ -25,6 +25,7 @@ import timeline from './documents/timeline';
 import mldcares from './documents/mldcares';
 import career from './documents/career';
 import closeout from './documents/closeout';
+
 //OBJECTS IMPORTS (COMPONENTS)
 import showroomVideo from './objects/ShowroomVideoComponent';
 import hoursComponent from './objects/hoursComponent';
@@ -36,8 +37,6 @@ import showroomInfo from './objects/showroomInfo';
 import allBrands from './objects/allBrands';
 import popularBrands from './objects/popularBrands';
 import brand from './objects/brand';
-import offeringsSlider from './objects/offeringsSlider';
-import offeringsSliderItem from './objects/offeringsSliderItem';
 import showroomSlider from './objects/showroomSlider';
 import showroomSliderItem from './objects/showroomSliderItem';
 import parallaxIntro from './objects/parallaxIntro';
@@ -58,6 +57,8 @@ import splitGallery from './objects/splitGallery';
 import bigTiles from './objects/bigTiles';
 import video from './objects/video';
 import review from './objects/review';
+import blogParagraph from './objects/blogParagraph';
+import splitSlider from './objects/splitSlider';
 
 export const schemaTypes = [
 
@@ -99,8 +100,8 @@ export const schemaTypes = [
     allBrands,
     popularBrands,
     brand,
-    offeringsSlider,
-    offeringsSliderItem,
+   
+   
     showroomSlider,
     showroomSliderItem,
     pillars,
@@ -119,4 +120,6 @@ export const schemaTypes = [
     bigTiles,
     video,
     review,
+    blogParagraph,
+    splitSlider,
 ]

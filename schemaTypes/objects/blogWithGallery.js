@@ -5,7 +5,7 @@ export default {
   fields: [
     {
       name: 'preImageParagraphs',
-      title: 'Pre-Image Paragraphs',
+      title: 'Pre-Image Paragraph',
       type: 'array',
       of: [{ type: 'text' }],
     },
@@ -14,9 +14,6 @@ export default {
       title: 'Gallery Images',
       type: 'array',
       of: [{ type: 'image' }],
-      options: {
-        hotspot: true,
-      },
     },
     {
       name: 'postImageParagraphs',
@@ -25,4 +22,16 @@ export default {
       of: [{ type: 'text' }],
     },
   ],
+  preview: {
+    select: {
+      media: 'images.0',
+    },
+    prepare(selection) {
+      const { media } = selection;
+      return {
+        title: 'Blog with Photo Gallery',
+        media: media || undefined,
+      };
+    },
+  },
 };

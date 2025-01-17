@@ -1,14 +1,10 @@
 export default {
   name: 'gridGallery',
+  title: 'Photo Gallery',
   type: 'object',
-  title: 'Grid Gallery',
-  description: '*limited up to 20 photos',
   fields: [
     { name: 'galleryTitle', type: 'string', title: 'Gallery Title' },
     { name: 'galleryDescription', type: 'text', title: 'Gallery Description' },
-    { name: 'button1', type: 'string', title: 'Button 1 Text' },
-    { name: 'button2', type: 'string', title: 'Button 2 Text' },
-    { name: 'button3', type: 'string', title: 'Button 3 Text' },
     { name: 'img1', type: 'image', title: 'Image 1' },
     { name: 'img2', type: 'image', title: 'Image 2' },
     { name: 'img3', type: 'image', title: 'Image 3' },
@@ -29,5 +25,5 @@ export default {
     { name: 'img18', type: 'image', title: 'Image 18' },
     { name: 'img19', type: 'image', title: 'Image 19' },
     { name: 'img20', type: 'image', title: 'Image 20' },
-  ]
+  ],
 };

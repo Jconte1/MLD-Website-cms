@@ -1,8 +1,24 @@
 export default {
     name: 'blogImage',
-    type: 'object',
     title: 'Image',
+    type: 'object',
     fields: [
-        {name:'image', type: 'image', title: 'Image'}
-    ]
+        {
+            name: 'image',
+            title: 'Image URL',
+            type: 'image',
+        },
+    ],
+    preview: {
+        select: {
+            media: 'image',
+        },
+        prepare(selection) {
+            const { media } = selection;
+            return {
+                title: 'Blog Image',
+                media: media,
+            };
+        },
+    },
 };

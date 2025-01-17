@@ -1,7 +1,7 @@
 export default {
   name: 'simpleIntro2',
-  type: 'object',
   title: 'Simple Intro 2',
+  type: 'object',
   fields: [
     { name: 'backgroundImage', type: 'image', title: 'Background Image' },
     { name: 'title', type: 'string', title: 'Title' },

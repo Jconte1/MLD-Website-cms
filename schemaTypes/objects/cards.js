@@ -1,24 +1,100 @@
-import { defineField, defineType } from 'sanity';
 
-export default defineType({
+
+export default {
   name: 'cards',
+  title: 'Cards Section',
   type: 'object',
-  title: 'Cards',
   fields: [
-    defineField({ name: 'cardImage1', type: 'image', title: 'Card Image 1' }),
-    defineField({ name: 'cardTitle1', type: 'string', title: 'Card Title 1' }),
-    defineField({ name: 'cardParagraph1', type: 'text', title: 'Card Paragraph 1' }),
-    defineField({ name: 'cardURL1', type: 'url', title: 'Card URL 1' }),
-    defineField({ name: 'cardButton1', type: 'string', title: 'Card Button 1' }),
-    defineField({ name: 'cardImage2', type: 'image', title: 'Card Image 2' }),
-    defineField({ name: 'cardTitle2', type: 'string', title: 'Card Title 2' }),
-    defineField({ name: 'cardParagraph2', type: 'text', title: 'Card Paragraph 2' }),
-    defineField({ name: 'cardURL2', type: 'url', title: 'Card URL 2' }),
-    defineField({ name: 'cardButton2', type: 'string', title: 'Card Button 2' }),
-    defineField({ name: 'cardImage3', type: 'image', title: 'Card Image 3' }),
-    defineField({ name: 'cardTitle3', type: 'string', title: 'Card Title 3' }),
-    defineField({ name: 'cardParagraph3', type: 'text', title: 'Card Paragraph 3' }),
-    defineField({ name: 'cardURL3', type: 'url', title: 'Card URL 3' }),
-    defineField({ name: 'cardButton3', type: 'string', title: 'Card Button 3' })
-  ]
-});
+    {
+      name: 'cardImage1',
+      title: 'Card Image 1',
+      type: 'image',
+      options: { hotspot: true },
+    },
+    {
+      name: 'cardTitle1',
+      title: 'Card Title 1',
+      type: 'string',
+    },
+    {
+      name: 'cardParagraph1',
+      title: 'Card Paragraph 1',
+      type: 'text',
+    },
+    {
+      name: 'cardURL1',
+      title: 'Card URL 1',
+      type: 'url',
+    },
+    {
+      name: 'cardButton1',
+      title: 'Card Button Text 1',
+      type: 'string',
+    },
+    {
+      name: 'cardImage2',
+      title: 'Card Image 2',
+      type: 'image',
+      options: { hotspot: true },
+    },
+    {
+      name: 'cardTitle2',
+      title: 'Card Title 2',
+      type: 'string',
+    },
+    {
+      name: 'cardParagraph2',
+      title: 'Card Paragraph 2',
+      type: 'text',
+    },
+    {
+      name: 'cardURL2',
+      title: 'Card URL 2',
+      type: 'url',
+    },
+    {
+      name: 'cardButton2',
+      title: 'Card Button Text 2',
+      type: 'string',
+    },
+    {
+      name: 'cardImage3',
+      title: 'Card Image 3',
+      type: 'image',
+      options: { hotspot: true },
+    },
+    {
+      name: 'cardTitle3',
+      title: 'Card Title 3',
+      type: 'string',
+    },
+    {
+      name: 'cardParagraph3',
+      title: 'Card Paragraph 3',
+      type: 'text',
+    },
+    {
+      name: 'cardURL3',
+      title: 'Card URL 3',
+      type: 'url',
+    },
+    {
+      name: 'cardButton3',
+      title: 'Card Button Text 3',
+      type: 'string',
+    },
+  ],
+  preview: {
+    select: {
+      title: 'cardTitle1',
+      media: 'cardImage1',
+    },
+    prepare(selection) {
+      const { title, media } = selection;
+      return {
+        title: title || 'Cards Section',
+        media: media || undefined,
+      };
+    },
+  }
+};

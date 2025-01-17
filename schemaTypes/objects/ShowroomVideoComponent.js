@@ -4,7 +4,7 @@ export default {
   type: 'object',
   title: 'Showroom Video',
   fields: [
-    { name: 'videoSrc', type: 'file', title: 'Video Source' },
+    { name: 'video', type: 'video', title: 'Intro Video Section' },
     { name: 'title', type: 'string', title: 'Title' },
     { name: 'button1', type: 'string', title: 'Button 1 Text' },
     { name: 'button2', type: 'string', title: 'Button 2 Text' },
