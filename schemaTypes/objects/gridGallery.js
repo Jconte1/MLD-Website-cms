@@ -4,7 +4,7 @@ export default {
   type: 'object',
   fields: [
     { name: 'galleryTitle', type: 'string', title: 'Gallery Title' },
-    { name: 'galleryDescription', type: 'text', title: 'Gallery Description' },
+    { name: 'galleryDescription', title: 'Gallery Description', type: 'array', of: [{ type: 'block' }]},
     { name: 'img1', type: 'image', title: 'Image 1' },
     { name: 'img2', type: 'image', title: 'Image 2' },
     { name: 'img3', type: 'image', title: 'Image 3' },

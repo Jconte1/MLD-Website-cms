@@ -59,6 +59,9 @@ import video from './objects/video';
 import review from './objects/review';
 import blogParagraph from './objects/blogParagraph';
 import splitSlider from './objects/splitSlider';
+import title from './objects/title'
+import flipCards from './objects/flipCards';
+
 
 export const schemaTypes = [
 
@@ -100,8 +103,6 @@ export const schemaTypes = [
     allBrands,
     popularBrands,
     brand,
-   
-   
     showroomSlider,
     showroomSliderItem,
     pillars,
@@ -122,4 +123,6 @@ export const schemaTypes = [
     review,
     blogParagraph,
     splitSlider,
+    title,
+    flipCards,
 ]

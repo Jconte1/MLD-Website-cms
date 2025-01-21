@@ -19,7 +19,7 @@ export default {
     {
       name: 'cardParagraph1',
       title: 'Card Paragraph 1',
-      type: 'text',
+      type: 'array', of: [{ type: 'block' }],
     },
     {
       name: 'cardURL1',
@@ -45,7 +45,7 @@ export default {
     {
       name: 'cardParagraph2',
       title: 'Card Paragraph 2',
-      type: 'text',
+      type: 'array', of: [{ type: 'block' }],
     },
     {
       name: 'cardURL2',
@@ -71,7 +71,7 @@ export default {
     {
       name: 'cardParagraph3',
       title: 'Card Paragraph 3',
-      type: 'text',
+      type: 'array', of: [{ type: 'block' }],
     },
     {
       name: 'cardURL3',

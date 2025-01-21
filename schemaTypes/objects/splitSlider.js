@@ -6,12 +6,11 @@ export default {
         { name: 'title', title: 'Title', type: 'string', validation: (Rule) => Rule.required() },
         { name: 'subTitle', title: 'Sub Title', type: 'string' },
         {
-            name: 'offeringsSlider',
+            name: 'offeringsSlider', // Match this name to the query
             title: 'Offerings Slider',
             type: 'array',
             of: [
                 {
-                    
                     type: 'object',
                     fields: [
                         { name: 'sliderTitle', title: 'Slide Title', type: 'string' },
