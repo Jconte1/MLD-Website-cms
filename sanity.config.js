@@ -5,8 +5,6 @@ import { presentationTool } from 'sanity/presentation'
 import { myStructure } from './deskStructure'
 import { schemaTypes } from './schemaTypes'
 
-const SANITY_STUDIO_PREVIEW_URL = process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000/showrooms/slc'
-
 export default defineConfig({
   name: 'default',
   title: 'mldwebsite-cms',
@@ -19,7 +17,11 @@ export default defineConfig({
     }),
     visionTool(),
     presentationTool({
-      previewUrl: SANITY_STUDIO_PREVIEW_URL,
+      previewUrl: {
+        draftMode: {
+          enable: '/api/draft',
+        },
+      },
     }),
   ],
 
