@@ -4,7 +4,7 @@ export default {
   type: 'object',
   fields: [
     { name: 'backgroundImage', type: 'image', title: 'Background Image' },
-    { name: 'title', type: 'string', title: 'Title' },
+    { name: 'title', type: 'string', title: 'H1 Title' },
     {
       name: 'description', title: 'Description', type: 'array',
       of: [{ type: 'block' }],

@@ -72,69 +72,7 @@ export default {
         {
           name: 'simpleIntro2',
           title: 'Simple Intro',
-          type: 'object',
-          fields: [
-            {
-              name: 'backgroundImage',
-              title: 'Background Image',
-              type: 'image',
-            },
-            {
-              name: 'title',
-              title: 'Title',
-              type: 'string',
-              validation: Rule => Rule.max(78).error('Cannot exceed 78 characters.')
-            },
-            {
-              name: 'description',
-              title: 'Description',
-              type: 'array',
-              of: [{ type: 'block' }],
-              validation: Rule => Rule.custom(blocks => {
-                const totalChars = blocks?.reduce((acc, block) => {
-                  if (block._type === 'block') {
-                    return acc + block.children.reduce((childAcc, child) => childAcc + (child.text || '').length, 0);
-                  }
-                  return acc;
-                }, 0);
-
-                return totalChars <= 221 ? true : 'Cannot exceed 221 characters.';
-              })
-            },
-            {
-              name: 'author',
-              title: 'Author',
-              type: 'string',
-            },
-            {
-              name: 'publishedAt',
-              title: 'Published At',
-              type: 'datetime',
-              options: {
-                dateFormat: 'YYYY-MM-DD',
-                timeFormat: 'HH:mm',
-                timeStep: 15,
-                calendarTodayLabel: 'Today',
-              },
-            },
-            {
-              name: 'overlayImage',
-              title: 'Overlay Image',
-              type: 'image',
-            },
-          ],
-          preview: {
-            select: {
-              overlayImage: 'overlayImage'
-            },
-            prepare(selection) {
-              const { overlayImage } = selection;
-              return {
-                title: 'Intro Section',
-                media: overlayImage,
-              }
-            }
-          }
+          type: 'simpleIntro2'
         },
         {
           name: 'textWrap',

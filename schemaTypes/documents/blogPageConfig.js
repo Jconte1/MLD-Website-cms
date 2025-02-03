@@ -11,11 +11,7 @@ export default {
       {
         name: 'simpleIntro',
         title: 'Simple Intro',
-        type: 'object',
-        fields: [
-          { name: 'title', title: 'Title', type: 'string' },
-          { name: 'backgroundImage', title: 'Background Image', type: 'image' },
-        ],
+        type: 'simpleIntro'
       },
       {
         name: 'filterComponent',

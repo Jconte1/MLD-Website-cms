@@ -9,8 +9,21 @@ export default defineType({
     defineField({ name: 'street', type: 'string', title: 'Street Address' }),
     defineField({ name: 'stateCity', type: 'string', title: 'City and State' }),
     defineField({ name: 'zip', type: 'string', title: 'ZIP Code' }),
-    defineField({ name: 'businessHours', type: 'string', title: 'Business Hours' }),
+    defineField({ name: 'googleURL', type: 'url', title: 'Google Maps URL' }),
     defineField({ name: 'saturdayHours', type: 'string', title: 'Saturday Hours' }),
-    defineField({ name: 'phone', type: 'string', title: 'Phone Number' }),
-  ]
+    defineField({ name: 'phoneNumber', type: 'string', title: 'Phone Number' }),
+    defineField({ name: 'emailURL', type: 'string', title: 'Email Address' }),
+  ],
+  preview: {
+    select: {
+      title: 'title',
+      subtitle: 'street',
+    },
+    prepare({ title, subtitle }) {
+      return {
+        title: title || 'Hours Component',
+        subtitle: subtitle || 'No Address Set',
+      };
+    },
+  },
 });
