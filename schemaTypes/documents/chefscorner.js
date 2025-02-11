@@ -14,7 +14,9 @@ export default {
             type: 'array',
             of: [
                 {
-                    type: 'simpleIntro',
+                    name: 'simpleIntro',
+                    title: 'Simple Intro',
+                    type: 'simpleIntro'
                 },
                 {
                     type: 'featuresComponent',
@@ -120,6 +122,43 @@ export default {
                         },
                     },
                 },
+                {
+                    name: 'eventPreview',
+                    title: 'Preview Section',
+                    type: 'object',
+                    description: 'This section will preview other pages like recipes, blogs, demos, etc...',
+                    fields: [
+                      {
+                        name: 'title',
+                        title: 'Title of Section',
+                        type: 'string'
+                      },
+                      {
+                        name: 'url',
+                        title: 'Base URL',
+                        type: 'string',
+                        description: 'Enter the base URL path, e.g., /newsandevents'
+                      },
+                      {
+                        name: 'contentType',
+                        title: 'Content Type',
+                        type: 'string',
+                        options: {
+                          list: [
+                            { title: 'Recipe', value: 'recipe' },
+                            { title: 'Demo', value: 'demo' }
+                          ]
+                        },
+                        description: 'Select the type of content this section previews'
+                      },
+                      {
+                        name: 'buttonText',
+                        title: 'Button Text',
+                        type: 'string',
+                        description: 'Text displayed on the button, e.g., "Read More"'
+                      }
+                    ]
+                  },
             ],
         },
     ],

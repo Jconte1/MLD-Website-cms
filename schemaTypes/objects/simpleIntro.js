@@ -18,9 +18,21 @@ export default {
           { title: "Bottom Right", value: "bottomRight" },
           { title: "Center", value: "center" },
         ],
-        layout: "radio", // dropdown maybe? 
+        layout: "radio", 
       },
       validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "color",
+      type: "string",
+      title: "H1 Color",
+      description: "Select what color the title should be.",
+      options:{
+        list: [
+          { title: "White", value: "white" },
+          { title: "Black", value: "black" },
+        ]
+      }
     },
     { name: 'overlayImage', type: 'image', title: 'Overlay Image' }
   ],

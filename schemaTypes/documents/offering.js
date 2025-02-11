@@ -49,6 +49,16 @@ export default {
                     },
                 },
                 {
+                    name: 'blogImage',
+                    title: 'image',
+                    type: 'blogImage',
+                },
+                {
+                    name: 'simpleIntro',
+                    title: 'Simple Intro',
+                    type: 'simpleIntro'
+                },
+                {
                     name: 'description',
                     title: 'Description',
                     type: 'object',
@@ -93,7 +103,6 @@ export default {
                             name: 'title',
                             type: 'string',
                             title: 'Form Title',
-
                         },
                         {
                             name: 'subTitle',
@@ -105,40 +114,7 @@ export default {
                 {
                     name: 'showroomSlider',
                     title: 'Showroom Slider',
-                    type: 'object',
-                    fields: [
-                        { name: 'title', title: 'Title', type: 'string', validation: (Rule) => Rule.required() },
-                        { name: 'subTitle', title: 'Sub Title', type: 'string' },
-
-                        {
-                            name: 'showrooms',
-                            title: 'Showrooms',
-                            type: 'array',
-                            of: [
-                                {
-                                    type: 'object',
-                                    fields: [
-                                        { name: 'name', title: 'Showroom Name', type: 'string' },
-                                        { name: 'imageURL', title: 'Image URL', type: 'image' },
-                                        { name: 'url2', title: 'Showroom URL', type: 'url', validation: (Rule) => Rule.required() },
-                                    ],
-                                },
-                            ],
-                        },
-                        { name: 'button', title: 'Button Text', type: 'string' },
-                        { name: 'url', title: 'Button URL', type: 'url', validation: (Rule) => Rule.required() },
-                    ],
-                    preview: {
-                        select: {
-                            title: 'title',
-                        },
-                        prepare(selection) {
-                            const { title } = selection;
-                            return {
-                                title: title || 'Showroom Slider Section',
-                            };
-                        },
-                    },
+                    type: 'showroomSlider',
                 },
                 {
                     name: 'popularBrands',

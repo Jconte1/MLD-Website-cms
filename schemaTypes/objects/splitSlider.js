@@ -6,7 +6,7 @@ export default {
         { name: 'title', title: 'Title', type: 'string', validation: (Rule) => Rule.required() },
         { name: 'subTitle', title: 'Sub Title', type: 'string' },
         {
-            name: 'offeringsSlider', // Match this name to the query
+            name: 'offeringsSlider', 
             title: 'Offerings Slider',
             type: 'array',
             of: [

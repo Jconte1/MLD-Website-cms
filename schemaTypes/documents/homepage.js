@@ -19,7 +19,7 @@ export default {
       title: 'Page Sections',
       type: 'array',
       of: [
-       
+
         {
           name: 'video',
           type: 'video',
@@ -35,10 +35,10 @@ export default {
           title: '3D Slider',
           type: 'object', // Use 'object' since it includes fields
           fields: [
-            { 
-              name: 'title', 
-              title: 'Title', 
-              type: 'string', 
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
               description: 'The main title of the 3D slider.',
               validation: Rule => Rule.required(), // Make the title required
             },
@@ -47,30 +47,7 @@ export default {
         {
           name: 'showroomSlider',
           title: 'Showroom Slider',
-          type: 'object',
-          fields: [
-            { name: 'title', title: 'Title', type: 'string' },
-            { name: 'subTitle', title: 'Subtitle', type: 'string' },
-            { name: 'url', title: 'URL', type: 'url' },
-            { name: 'button', title: 'Button Text', type: 'string' },
-            {
-              name: 'showrooms',
-              title: 'Showrooms',
-              type: 'array',
-              of: [
-                {
-                  name: 'showroom',
-                  title: 'Showroom',
-                  type: 'object',
-                  fields: [
-                    { name: 'name', title: 'Showroom Name', type: 'string' },
-                    { name: 'url2', title: 'Showroom URL', type: 'url' },
-                    { name: 'imageURL', title: 'Image URL', type: 'image', options: { hotspot: true } }
-                  ]
-                }
-              ]
-            }
-          ]
+          type: 'showroomSlider',
         },
         {
           name: 'cards',
@@ -276,7 +253,7 @@ export default {
               name: 'title',
               type: 'string',
               title: 'Form Title',
-              
+
             },
             {
               name: 'subTitle',
