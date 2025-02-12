@@ -52,7 +52,10 @@ export default {
       name: 'button',
       title: 'Button Title',
       type: 'string',
+      validation: Rule => Rule.min(3).max(30).error('Button title must be between 3 and 30 characters')
+
     },
+    
     {
       name: 'publishedAt',
       title: 'Published At',
