@@ -54,6 +54,11 @@ export default {
                     type: 'videoIntro',
                 },
                 {
+                    name: 'paragraph',
+                    type: 'paragraph',
+                    title: 'Paragraph Section'
+                },
+                {
                     name: 'blogImage',
                     title: 'image',
                     type: 'blogImage',
