@@ -61,7 +61,7 @@ import blogParagraph from './objects/blogParagraph';
 import splitSlider from './objects/splitSlider';
 import title from './objects/title'
 import flipCards from './objects/flipCards';
-
+import videoIntro from './objects/video-intro';
 
 export const schemaTypes = [
 
@@ -125,4 +125,5 @@ export const schemaTypes = [
     splitSlider,
     title,
     flipCards,
+    videoIntro,
 ]

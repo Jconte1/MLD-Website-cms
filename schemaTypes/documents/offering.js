@@ -49,6 +49,11 @@ export default {
                     },
                 },
                 {
+                    name: 'videoIntro',
+                    title: 'Video Intro Section',
+                    type: 'videoIntro',
+                },
+                {
                     name: 'blogImage',
                     title: 'image',
                     type: 'blogImage',
