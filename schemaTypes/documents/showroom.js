@@ -15,7 +15,11 @@ export default {
       description: 'Unique identifier for the showroom',
       validation: Rule => Rule.required()
     },
-
+    {
+      name: 'paragraph',
+      type: 'paragraph',
+      title: 'Paragraph Section'
+    },
     {
       name: 'showroomVideo',
       type: 'showroomVideo',
