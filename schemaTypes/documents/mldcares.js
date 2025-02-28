@@ -19,7 +19,11 @@ export default {
         { type: 'cards' },
         { type: 'blogImage' },
         { type: 'gridGallery' },
-        { type: 'blogParagraph' },
+        {
+          name: 'blogParagraph',
+          type: 'blogParagraph',
+          title: 'Paragraph'
+        },
         {
           name: 'description',
           title: 'Description',

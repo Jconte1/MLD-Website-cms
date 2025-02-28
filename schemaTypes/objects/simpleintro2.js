@@ -11,6 +11,6 @@ export default {
     },
     { name: 'author', type: 'string', title: 'Author' },
     { name: 'publishedAt', type: 'datetime', title: 'Published At' },
-    { name: 'overlayImage', type: 'image', title: 'Overlay Image' }
+    
   ]
 };
