@@ -3,11 +3,7 @@ export default {
     type: 'document',
     title: 'Department',
     fields: [
-      {
-        name: 'seo',
-        type: 'seo',
-        title: 'SEO Settings'
-      },
+    
       {
         name: 'departmentName',
         type: 'string',

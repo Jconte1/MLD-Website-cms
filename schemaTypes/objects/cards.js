@@ -1,10 +1,20 @@
-
-
 export default {
   name: 'cards',
   title: 'Cards Section',
   type: 'object',
   fields: [
+    {
+      name: 'mainTitle',
+      title: 'Main Title',
+      type: 'string',
+      description: 'The main title for the card section',
+    },
+    {
+      name: 'mainSubTitle',
+      title: 'Main Subtitle',
+      type: 'string',
+      description: 'The subtitle for the card section',
+    },
     {
       name: 'cardImage1',
       title: 'Card Image 1',
@@ -19,7 +29,8 @@ export default {
     {
       name: 'cardParagraph1',
       title: 'Card Paragraph 1',
-      type: 'array', of: [{ type: 'text' }],
+      type: 'array',
+      of: [{ type: 'block' }], // ✅ Changed to block content
     },
     {
       name: 'cardURL1',
@@ -45,7 +56,8 @@ export default {
     {
       name: 'cardParagraph2',
       title: 'Card Paragraph 2',
-      type: 'array', of: [{ type: 'text' }],
+      type: 'array',
+      of: [{ type: 'block' }], // ✅ Changed to block content
     },
     {
       name: 'cardURL2',
@@ -71,7 +83,8 @@ export default {
     {
       name: 'cardParagraph3',
       title: 'Card Paragraph 3',
-      type: 'array', of: [{ type: 'text' }],
+      type: 'array',
+      of: [{ type: 'block' }], // ✅ Changed to block content
     },
     {
       name: 'cardURL3',
@@ -86,7 +99,7 @@ export default {
   ],
   preview: {
     select: {
-      title: 'cardTitle1',
+      title: 'mainTitle',
       media: 'cardImage1',
     },
     prepare(selection) {
@@ -96,5 +109,5 @@ export default {
         media: media || undefined,
       };
     },
-  }
+  },
 };

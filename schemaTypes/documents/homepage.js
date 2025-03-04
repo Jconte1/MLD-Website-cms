@@ -161,6 +161,13 @@ export default {
                       title: 'ID',
                       description: 'Unique identifier for the card',
                     },
+                    {
+                      name: 'href',
+                      type: 'url',
+                      title: 'Link (Href)',
+                      description: 'URL that the card should link to',
+                      validation: (Rule) => Rule.uri({ scheme: ['http', 'https'] }),
+                    },
                     { name: 'imageURL', title: 'Image URL', type: 'image', options: { hotspot: true } },
                     {
                       name: 'name',

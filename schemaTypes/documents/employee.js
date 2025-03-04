@@ -4,11 +4,6 @@ export default {
     title: 'Employee',
     fields: [
       {
-        name: 'seo',
-        type: 'seo',
-        title: 'SEO Settings'
-      },
-      {
         name: 'name',
         type: 'string',
         title: 'Employee Name'

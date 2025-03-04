@@ -5,7 +5,9 @@ export default {
   fields: [
     { name: 'backgroundImage', type: 'image', title: 'Background Image' },
     { name: 'locationName', type: 'string', title: 'Location Name', description: '*no commas needed*' },
+    { name: 'href', type: 'url', title: 'Location URL', description: 'Link to the location page' },
     { name: 'locationStreetAddress', type: 'string', title: 'Street Address', description: '*no commas needed*' },
+    { name: 'addressLink', type: 'url', title: 'Google Maps Link', description: 'Link to Google Maps for this location' },
     { name: 'locationCity', type: 'string', title: 'City', description: '*no commas needed*' },
     { name: 'locationState', type: 'string', title: 'State', description: '*no commas needed*' },
     { name: 'locationZipcode', type: 'string', title: 'Zip Code', description: '*no commas needed*' },
