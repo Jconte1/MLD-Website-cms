@@ -9,8 +9,17 @@ export default {
     {
       name: 'showrooms',
       title: 'Showrooms',
-      type: 'array', // ✅ This must be an array
-      of: [{ type: 'showroom' }], // ✅ Correct reference to your `showroomItem`
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            { name: "name", title: "Showroom Name", type: "string" },
+            { name: "imageURL", title: "Image", type: "image", options: { hotspot: true } },
+            { name: "url2", title: "Showroom URL", type: "url", validation: (Rule) => Rule.required() },
+          ],
+        },
+      ],
     },
     { name: 'button', title: 'Button Text', type: 'string' },
     { name: 'url', title: 'Button URL', type: 'url', validation: (Rule) => Rule.required() },

@@ -56,7 +56,7 @@ export default {
         },
         {
           name: 'blogWithGallery',
-          title: 'Blog With Gallery',
+          title: 'Paragraphs With Gallery',
           type: 'object',
           fields: [
             {
@@ -81,7 +81,7 @@ export default {
         },
         {
           name: 'blogImage',
-          title: 'Blog Image',
+          title: 'Image',
           type: 'object',
           fields: [
             {
@@ -93,8 +93,13 @@ export default {
           ]
         },
         {
+          name: 'blogTitle',
+          title: 'H2 Title',
+          type: 'blogTitle',
+        },
+        {
           name: 'blogParagraph',
-          title: 'Blog Paragraph',
+          title: 'Paragraph',
           type: 'object',
           fields: [
             {
@@ -131,7 +136,7 @@ export default {
         {
           name: 'coolTiles',
           type: 'object',
-          title: 'Cool Tiles',
+          title: 'Tiles with Animation',
           fields: [
             {
               name: 'title',
@@ -237,6 +242,7 @@ export default {
             },
           ],
         },
+
       ]
     }
   ]

@@ -8,7 +8,7 @@ export default {
             name: 'blogParagraphs',
             title: 'Paragraphs',
             type: 'array',
-            of: [{ type: 'block' }],
+            of: [{ type: 'text' }],
 
         },
     ],
