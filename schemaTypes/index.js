@@ -64,6 +64,7 @@ import flipCards from './objects/flipCards';
 import videoIntro from './objects/video-intro';
 import paragraph from './objects/paragraph';
 import oldBlogContent from './objects/oldBlogContent';
+import scrollToFormButton from './objects/scrollToFormButton';
 
 
 export const schemaTypes = [
@@ -131,5 +132,5 @@ export const schemaTypes = [
     videoIntro,
     paragraph,
     oldBlogContent,
-    
+    scrollToFormButton,
 ]

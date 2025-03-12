@@ -15,6 +15,7 @@ export default {
             description: 'Unique identifier for the offering (e.g., "appliances", "plumbing")',
             validation: (Rule) => Rule.required(),
         },
+        
         {
             name: 'pageSections',
             title: 'Page Sections',
@@ -48,6 +49,7 @@ export default {
                         },
                     },
                 },
+                { type: 'scrollToFormButton' },
                 {
                     name: 'videoIntro',
                     title: 'Video Intro Section',
@@ -119,6 +121,12 @@ export default {
                             type: 'string',
                             title: 'Form Subtitle',
                         },
+                        {
+                            name: 'formId',
+                            type: 'string',
+                            title: 'Form Section ID (for scroll target)',
+                            initialValue: 'lead-form',
+                        }
                     ],
                 },
                 {
@@ -192,9 +200,9 @@ export default {
                     name: 'cards',
                     title: 'Cards Section',
                     type: 'cards',
-                    
+
                 },
-                
+
             ],
         },
     ],
