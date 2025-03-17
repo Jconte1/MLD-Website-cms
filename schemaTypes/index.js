@@ -65,7 +65,7 @@ import videoIntro from './objects/video-intro';
 import paragraph from './objects/paragraph';
 import oldBlogContent from './objects/oldBlogContent';
 import scrollToFormButton from './objects/scrollToFormButton';
-
+import threeDSlider from './objects/threeDSlider';
 
 export const schemaTypes = [
 
@@ -133,4 +133,5 @@ export const schemaTypes = [
     paragraph,
     oldBlogContent,
     scrollToFormButton,
+    threeDSlider,
 ]

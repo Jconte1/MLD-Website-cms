@@ -59,6 +59,11 @@ export default {
                     },
                 },
                 {
+                    name: 'paragraph',
+                    title: 'Paragraph',
+                    type: 'paragraph',
+                },
+                {
                     name: 'flipCards',
                     title: 'Flip Cards',
                     type: 'object',

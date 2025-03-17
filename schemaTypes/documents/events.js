@@ -57,6 +57,13 @@ export default {
       validation: Rule => Rule.required().error('Event location is required.')
     },
     {
+      name: 'locationLink',
+      title: 'Location URL',
+      description: '(IE: Google Maps URL)',
+      type: 'url',
+      validation: Rule => Rule.required().error('Event location URL is required.')
+    },
+    {
       name: 'description',
       title: 'Description',
       type: 'text',

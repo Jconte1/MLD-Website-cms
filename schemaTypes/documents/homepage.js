@@ -30,20 +30,7 @@ export default {
           type: 'review',
           title: 'Reviews'
         },
-        {
-          name: '3dslider',
-          title: '3D Slider',
-          type: 'object', // Use 'object' since it includes fields
-          fields: [
-            {
-              name: 'title',
-              title: 'Title',
-              type: 'string',
-              description: 'The main title of the 3D slider.',
-              validation: Rule => Rule.required(), // Make the title required
-            },
-          ],
-        },
+        { type: 'threeDSlider' },
         {
           name: 'showroomSlider',
           title: 'Showroom Slider',
