@@ -45,6 +45,11 @@ export default {
       type: 'gridGallery',
       title: 'Grid Gallery'
     },
+    { 
+      name: 'threeDSlider',
+      type: 'threeDSlider',
+      title: 'Closeout Preview (cards)'
+    },
     {
       name: 'leadForm',
       title: 'Lead Form',

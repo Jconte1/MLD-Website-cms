@@ -53,7 +53,11 @@ export default {
                         },
                     },
                 },
-                // Add other section types as needed, similar to Offerings
+                { 
+                    name: 'threeDSlider',
+                    type: 'threeDSlider',
+                    title: 'Closeout Preview (cards)'
+                },
             ],
         }
     ]

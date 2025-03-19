@@ -196,6 +196,7 @@ export default {
                         },
                     },
                 },
+                { type: 'threeDSlider' },
                 {
                     name: 'cards',
                     title: 'Cards Section',
