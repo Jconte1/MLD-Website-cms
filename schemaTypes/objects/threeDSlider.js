@@ -13,7 +13,8 @@ export default {
         name: 'subTitle',
         title: 'Subtitle',
         type: 'string',
-      }
+      },
+      
     ],
   }
   

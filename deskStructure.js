@@ -101,11 +101,11 @@ export const myStructure = (S) =>
               S.listItem()
                 .title('Demo Calendar')
                 .schemaType('event')
-                
+
                 .child(
                   S.documentTypeList('event')
                     .title('Events')
-                   
+
                 )
             ])
         ),
@@ -119,79 +119,79 @@ export const myStructure = (S) =>
             .title('We Are MLD')
             .items([
               S.listItem()
-              .title('Our Team')
-              .child(
-                S.list()
-                  .title('Our Team')
-                  .items([
-                    // Add SEO settings here
-                    S.listItem()
-                      .title('SEO Settings')
-                      .child(
-                        S.editor()
-                          .schemaType('team')
-                          .documentId('teamsPage') // Ensure this matches the actual document ID in Sanity
-                      ),
-                    S.listItem()
-                      .title('Intro Section (SplitGallery)')
-                      .child(
-                        S.editor()
-                          .schemaType('splitGallery')
-                          .documentId('splitGallery')
-                      ),
-                    S.divider(),
-                    S.listItem()
-                      .title('Executives')
-                      .child(
-                        S.documentTypeList('department')
-                          .title('Executives Department')
-                          .filter('_type == "department" && team == "executive"')
-                      ),
-                    S.listItem()
-                      .title('Admin')
-                      .child(
-                        S.documentTypeList('department')
-                          .title('Admin Department')
-                          .filter('_type == "department" && team == "admin"')
-                      ),
-                    S.listItem()
-                      .title('Salt Lake Team')
-                      .child(
-                        S.documentTypeList('department')
-                          .title('Salt Lake Team Departments')
-                          .filter('_type == "department" && team == "salt-lake"')
-                      ),
-                    S.listItem()
-                      .title('Provo Team')
-                      .child(
-                        S.documentTypeList('department')
-                          .title('Provo Team Departments')
-                          .filter('_type == "department" && team == "provo"')
-                      ),
-                    S.listItem()
-                      .title('Boise Team')
-                      .child(
-                        S.documentTypeList('department')
-                          .title('Boise Team Departments')
-                          .filter('_type == "department" && team == "boise"')
-                      ),
-                    S.listItem()
-                      .title('Sun Valley Team')
-                      .child(
-                        S.documentTypeList('department')
-                          .title('Sun Valley Team Departments')
-                          .filter('_type == "department" && team == "sun-valley"')
-                      ),
-                    S.listItem()
-                      .title('Jackson Team')
-                      .child(
-                        S.documentTypeList('department')
-                          .title('Jackson Team Departments')
-                          .filter('_type == "department" && team == "jackson"')
-                      ),
-                  ])
-              ),
-            
+                .title('Our Team')
+                .child(
+                  S.list()
+                    .title('Our Team')
+                    .items([
+                      // Add SEO settings here
+                      S.listItem()
+                        .title('SEO Settings')
+                        .child(
+                          S.editor()
+                            .schemaType('team')
+                            .documentId('teamsPage') // Ensure this matches the actual document ID in Sanity
+                        ),
+                      S.listItem()
+                        .title('Intro Section (SplitGallery)')
+                        .child(
+                          S.editor()
+                            .schemaType('splitGallery')
+                            .documentId('splitGallery')
+                        ),
+                      S.divider(),
+                      S.listItem()
+                        .title('Executives')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Executives Department')
+                            .filter('_type == "department" && team == "executive"')
+                        ),
+                      S.listItem()
+                        .title('Admin')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Admin Department')
+                            .filter('_type == "department" && team == "admin"')
+                        ),
+                      S.listItem()
+                        .title('Salt Lake Team')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Salt Lake Team Departments')
+                            .filter('_type == "department" && team == "salt-lake"')
+                        ),
+                      S.listItem()
+                        .title('Provo Team')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Provo Team Departments')
+                            .filter('_type == "department" && team == "provo"')
+                        ),
+                      S.listItem()
+                        .title('Boise Team')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Boise Team Departments')
+                            .filter('_type == "department" && team == "boise"')
+                        ),
+                      S.listItem()
+                        .title('Sun Valley Team')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Sun Valley Team Departments')
+                            .filter('_type == "department" && team == "sun-valley"')
+                        ),
+                      S.listItem()
+                        .title('Jackson Team')
+                        .child(
+                          S.documentTypeList('department')
+                            .title('Jackson Team Departments')
+                            .filter('_type == "department" && team == "jackson"')
+                        ),
+                    ])
+                ),
+
               S.listItem()
                 .title('Our Story')
                 .child(
@@ -226,9 +226,20 @@ export const myStructure = (S) =>
         .title('Shop Closeout Page')
         .child(
           S.editor()
-          .title('Shop Closeout Page')
+            .title('Shop Closeout Page')
             .schemaType('closeout')
             .documentId('closeout')
         ),
+      S.divider(),
+      S.listItem()
+        .title('Contact Us Page')
+        .child(
+          S.editor()
+            .id('contactPage')
+            .schemaType('contact')
+            .documentId('contactPage') // This is the fixed document ID
+        ),
+      S.divider(),
+
 
     ]);
