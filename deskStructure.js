@@ -237,9 +237,16 @@ export const myStructure = (S) =>
           S.editor()
             .id('contactPage')
             .schemaType('contact')
-            .documentId('contactPage') // This is the fixed document ID
+            .documentId('contactPage')
         ),
       S.divider(),
+      S.listItem()
+        .title('Catalogue')
+        .child(
+          S.documentTypeList('productcategory')
+            .title('Product Categories')
+        )
+
 
 
     ]);

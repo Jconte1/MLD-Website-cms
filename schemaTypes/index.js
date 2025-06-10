@@ -26,6 +26,7 @@ import mldcares from './documents/mldcares';
 import career from './documents/career';
 import closeout from './documents/closeout';
 import contact from './documents/contact';
+import productcategory from './documents/productcategory';
 
 //OBJECTS IMPORTS (COMPONENTS)
 import showroomVideo from './objects/ShowroomVideoComponent';
@@ -70,6 +71,9 @@ import threeDSlider from './objects/threeDSlider';
 import phone from './objects/phone';
 import emails from './objects/emails';
 import address from './objects/address';
+import tile from './objects/tile';
+import tileSection from './objects/tileSection';
+
 
 export const schemaTypes = [
 
@@ -99,6 +103,7 @@ export const schemaTypes = [
     career,
     closeout,
     contact,
+    productcategory,
 
     //OBJECTS (COMPONENTS)
     showroomVideo,
@@ -142,4 +147,7 @@ export const schemaTypes = [
     emails,
     phone,
     address,
+    tile,
+    tileSection,
+    
 ]

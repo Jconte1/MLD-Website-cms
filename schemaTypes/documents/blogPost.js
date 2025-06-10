@@ -35,7 +35,13 @@ export default {
       name: 'body',
       title: 'Body',
       type: 'array',
-      of: [{ type: 'block' }],
+      of: [
+        { type: 'block' }, // text blocks
+        {
+          type: 'image',   // image support!
+          options: { hotspot: true },
+        },
+      ],
     },
     {
       name: 'categories', // Changed from 'category' to 'categories'
