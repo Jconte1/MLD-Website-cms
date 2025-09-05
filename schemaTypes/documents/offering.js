@@ -24,30 +24,7 @@ export default {
                 {
                     name: 'parallaxIntro',
                     title: 'Intro Section',
-                    type: 'object',
-                    fields: [
-                        { name: 'pageTitle', title: 'Page Title', type: 'string' },
-                        { name: 'pageTitle2', title: 'Page Title 2', type: 'string' },
-                        { name: 'sectionTitle', title: 'Section Title', type: 'string' },
-                        { name: 'sectionDescription', title: 'Section Description', type: 'text' },
-                        { name: 'backgroundImage1', title: 'Background Image 1', type: 'image' },
-                        { name: 'backgroundImage2', title: 'Background Image 2', type: 'image' },
-                        { name: 'phone', title: 'Phone', type: 'string' },
-                        { name: 'contactButton', title: 'Contact Button Text', type: 'string' },
-                    ],
-                    preview: {
-                        select: {
-                            title: 'pageTitle',
-                            media: 'backgroundImage1',
-                        },
-                        prepare(selection) {
-                            const { title, media } = selection;
-                            return {
-                                title: title || 'Simple Intro',
-                                media: media,
-                            };
-                        },
-                    },
+                    type: 'parallaxIntro',
                 },
                 { type: 'scrollToFormButton' },
                 {
@@ -88,6 +65,7 @@ export default {
                                         { name: 'sliderTitle', title: 'Slide Title', type: 'text' },
                                         { name: 'description', title: 'Description', type: 'text' },
                                         { name: 'buttonText', title: 'Button Text', type: 'string' },
+                                        { name: 'href', title: 'Button Link', type: 'url' },
                                         { name: 'image', title: 'Image', type: 'image' },
                                     ],
                                 },

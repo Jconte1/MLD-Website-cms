@@ -73,7 +73,7 @@ import emails from './objects/emails';
 import address from './objects/address';
 import tile from './objects/tile';
 import tileSection from './objects/tileSection';
-
+import matterport from './objects/matterport';
 
 export const schemaTypes = [
 
@@ -149,5 +149,5 @@ export const schemaTypes = [
     address,
     tile,
     tileSection,
-    
+    matterport,
 ]

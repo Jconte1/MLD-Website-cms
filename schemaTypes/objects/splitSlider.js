@@ -16,6 +16,7 @@ export default {
                         { name: 'sliderTitle', title: 'Slide Title', type: 'string' },
                         { name: 'description', title: 'Description', type: 'string' },
                         { name: 'buttonText', title: 'Button Text', type: 'string' },
+                        { name: 'href', type: 'url', title: 'Button Link' },
                         { name: 'image', title: 'Image', type: 'image' },
                     ],
                 },

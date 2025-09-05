@@ -26,6 +26,11 @@ export default {
       title: 'Showroom Video'
     },
     {
+      name: 'matterport',
+      type: 'matterport',
+      title: 'Matterport Video'
+    },
+    {
       name: 'hoursComponent',
       type: 'hoursComponent',
       title: 'Hours Component'

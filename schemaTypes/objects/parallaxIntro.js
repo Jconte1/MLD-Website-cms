@@ -3,8 +3,11 @@ export default {
     type: 'object',
     title: 'Intro Section',
     fields: [
+      { name: 'backgroundImage1', type: 'image', title: 'Background Image' },
       { name: 'pageTitle', type: 'string', title: 'Page Title' },
       { name: 'pageTitle2', type: 'string', title: 'Secondary Page Title' },
+      { name: 'href', type: 'url', title: 'Button Link' },
+      { name: 'linkName', type: 'string', title: 'Button Title' },
       { name: 'sectionTitle', type: 'string', title: 'Section Title' },
       { name: 'sectionDescription', type: 'text', title: 'Section Description' },
       { name: 'locations', type: 'string', title: 'Locations' },
