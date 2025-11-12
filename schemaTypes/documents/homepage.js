@@ -73,11 +73,38 @@ export default {
           fields: [
             {
               name: 'image',
-              title: 'Image URL',
+              title: 'Image',
               type: 'image',
               options: { hotspot: true },
+            },
+            {
+              name: 'alt',
+              title: 'Alt text',
+              type: 'string',
+            },
+            {
+              name: 'href',
+              title: 'Link (optional)',
+              type: 'url',
+              description: 'Where to go when the image is clicked',
+              validation: (Rule) => Rule.uri({
+                scheme: ['http', 'https', 'mailto', 'tel']
+              })
+            },
+            {
+              name: 'newTab',
+              title: 'Open in new tab',
+              type: 'boolean',
+              initialValue: false
             }
-          ]
+          ],
+          preview: {
+            select: {
+              media: 'image',
+              title: 'alt',
+              subtitle: 'href'
+            }
+          }
         },
         {
           name: 'blogTitle',
