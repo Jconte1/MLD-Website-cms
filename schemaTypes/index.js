@@ -74,6 +74,9 @@ import address from './objects/address';
 import tile from './objects/tile';
 import tileSection from './objects/tileSection';
 import matterport from './objects/matterport';
+import teamNav from './objects/teamNav';
+import teamGroup from './objects/teamGroup';
+import departmentSection from './objects/departmentSection';
 
 export const schemaTypes = [
 
@@ -150,4 +153,7 @@ export const schemaTypes = [
     tile,
     tileSection,
     matterport,
+    teamNav,
+    teamGroup, 
+    departmentSection
 ]
