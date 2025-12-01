@@ -124,9 +124,9 @@ export const myStructure = (S) =>
                 .schemaType('team')
                 .child(
                   S.editor()
-                    .id('teamsPage')
+                    .id('teamPage')
                     .schemaType('team')
-                    .documentId('teamsPage') // keep this consistent with your team doc ID
+                    .documentId('teamPage') // keep this consistent with your team doc ID
                 ),
 
               S.listItem()
