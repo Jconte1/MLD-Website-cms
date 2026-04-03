@@ -1,4 +1,4 @@
-import { MdEvent, MdArticle, MdPeople } from 'react-icons/md'; // Add an icon for Teams page
+import { MdEvent, MdArticle, MdPeople, MdLocalOffer } from 'react-icons/md'; // Add an icon for Teams page
 
 export const myStructure = (S) =>
   S.list()
@@ -156,6 +156,26 @@ export const myStructure = (S) =>
                         .child(S.documentTypeList('career').title('Job Postings'))
                     ])
                 )
+            ])
+        ),
+      S.divider(),
+      S.listItem()
+        .title('Sale Events')
+        .icon(MdLocalOffer)
+        .child(
+          S.list()
+            .title('Sale Events')
+            .items([
+              S.documentTypeListItem('saleEvent').title('Sale Event Entries'),
+              S.listItem()
+                .title('Sale Settings')
+                .schemaType('saleSettings')
+                .child(
+                  S.editor()
+                    .id('saleSettings')
+                    .schemaType('saleSettings')
+                    .documentId('saleSettings')
+                ),
             ])
         ),
       S.divider(),

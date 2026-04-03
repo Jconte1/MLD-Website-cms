@@ -27,6 +27,8 @@ import career from './documents/career';
 import closeout from './documents/closeout';
 import contact from './documents/contact';
 import productcategory from './documents/productcategory';
+import saleEvent from './documents/saleEvent';
+import saleSettings from './documents/saleSettings';
 
 //OBJECTS IMPORTS (COMPONENTS)
 import showroomVideo from './objects/ShowroomVideoComponent';
@@ -77,6 +79,15 @@ import matterport from './objects/matterport';
 import teamNav from './objects/teamNav';
 import teamGroup from './objects/teamGroup';
 import departmentSection from './objects/departmentSection';
+import saleHero from './objects/saleHero';
+import saleInfoSection from './objects/saleInfoSection';
+import saleSpecialItem from './objects/saleSpecialItem';
+import saleSpecialsSection from './objects/saleSpecialsSection';
+import saleInstagramSection from './objects/saleInstagramSection';
+import saleMapSection from './objects/saleMapSection';
+import saleRegisterCta from './objects/saleRegisterCta';
+import saleRegistrationSettings from './objects/saleRegistrationSettings';
+import saleTrackingSettings from './objects/saleTrackingSettings';
 
 export const schemaTypes = [
 
@@ -107,6 +118,8 @@ export const schemaTypes = [
     closeout,
     contact,
     productcategory,
+    saleEvent,
+    saleSettings,
 
     //OBJECTS (COMPONENTS)
     showroomVideo,
@@ -155,5 +168,14 @@ export const schemaTypes = [
     matterport,
     teamNav,
     teamGroup, 
-    departmentSection
+    departmentSection,
+    saleHero,
+    saleInfoSection,
+    saleSpecialItem,
+    saleSpecialsSection,
+    saleInstagramSection,
+    saleMapSection,
+    saleRegisterCta,
+    saleRegistrationSettings,
+    saleTrackingSettings
 ]
