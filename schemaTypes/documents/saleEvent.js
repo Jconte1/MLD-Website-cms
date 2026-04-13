@@ -49,6 +49,7 @@ export default {
         { type: 'saleSpecialsSection' },
         { type: 'saleInstagramSection' },
         { type: 'saleMapSection' },
+        { type: 'saleVideoSection' },
         { type: 'saleRegisterCta' },
       ],
     },

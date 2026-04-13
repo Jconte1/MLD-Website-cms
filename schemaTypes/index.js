@@ -85,6 +85,7 @@ import saleSpecialItem from './objects/saleSpecialItem';
 import saleSpecialsSection from './objects/saleSpecialsSection';
 import saleInstagramSection from './objects/saleInstagramSection';
 import saleMapSection from './objects/saleMapSection';
+import saleVideoSection from './objects/saleVideoSection';
 import saleRegisterCta from './objects/saleRegisterCta';
 import saleRegistrationSettings from './objects/saleRegistrationSettings';
 import saleTrackingSettings from './objects/saleTrackingSettings';
@@ -175,6 +176,7 @@ export const schemaTypes = [
     saleSpecialsSection,
     saleInstagramSection,
     saleMapSection,
+    saleVideoSection,
     saleRegisterCta,
     saleRegistrationSettings,
     saleTrackingSettings
