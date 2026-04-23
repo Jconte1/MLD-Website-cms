@@ -7,7 +7,32 @@ export default {
         name: 'blogParagraphs',
         title: 'Paragraphs',
         type: 'array',
-        of: [{ type: 'block' }], // <-- change 'text' to 'block'
+        of: [
+          {
+            type: 'block',
+            marks: {
+              decorators: [
+                { title: 'Bold', value: 'strong' },
+                { title: 'Italic', value: 'em' },
+                { title: 'Underline', value: 'underline' },
+              ],
+              annotations: [
+                {
+                  title: 'Link',
+                  name: 'link',
+                  type: 'object',
+                  fields: [
+                    {
+                      title: 'URL',
+                      name: 'href',
+                      type: 'url',
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+        ],
       },
     ],
     preview: {
